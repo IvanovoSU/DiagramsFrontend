@@ -1,9 +1,188 @@
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100; /* Behind the navbar */
-  padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+body {
+	background: #000;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	margin-top: 42px;
+}
+
+.menu {
+	display: flex;
+	margin-left: 160px;
+}
+
+.menu li {
+	font-size: 12px;
+	margin-right: 25px;
+}
+
+.menu li a {
+	color: #fff;
+	padding: 12px 0;
+}
+
+.menu li a.active,
+.menu li a:hover {
+	color: #6bff3d;
+	border-top: 1px solid #6bff3d;
+	border-bottom: 1px solid #6bff3d;
+}
+
+.logo {
+
+}
+
+.emblem {
+	font-size: 12px;
+	margin-left: auto;
+}
+
+.offer {
+	display: flex;
+	align-items: center;
+	margin-top: 106px;
+}
+
+.offer-content h1 {
+	font-size: 37px;
+	font-weight: 900;
+}
+
+.offer-content p {
+	font-size: 16px;
+	font-weight: 200;
+	margin-top: 14px;
+}
+
+.offer-content a {
+	background: #faf04b;
+	color: #000;
+	font-weight: 900;
+	font-size: 14px;
+	width: 218px;
+	display: block;
+	text-align: center;
+	padding: 17px 0;
+	transition: all 0.5s ease;
+	margin-top: 35px;
+}
+
+.offer-content a:hover {
+	background: #eccb2e
+}
+
+.triangles {
+	background: url('../img/poly.png');
+	width: 380px;
+	height: 379px;
+	margin-left: auto;
+	margin-right: 81px;
+}
+#maintable {
+    background-color: #EFF2F3; /*Цвет окна не считая область диаграмы,полей ввода и кнопок*/
+    border: 1px solid #1e1e1e; /*Размер выделения рабочей области*/ 
+}
+
+a {
+    color: #08457e; /*Не понял цвет чего изменяет*/
+}
+
+p, span {
+
+}
+
+#maintable td {
+    border: 1px solid #EFF2F3; /*Размер всего прямоугольника*/
+    padding: 10px; /*Растояние между объектами*/
+}
+
+#maintable #image {
+    background-color: #fff; /*Цвет области рисование диаграммы*/
+    border: 1px solid #000; /*Размер и цвет окантовочки этой области*/
+}
+
+#panel span {
+    background-color: #f4f4f4; /*Цвет фона кнопок "-", "+" и "Обновить"*/ 
+    border: 1px solid #333; /*Размер и цвет окантовки кнопок*/ 
+    padding: 2px; /*Высота кнопок*/ 
+    padding-left: 6px; /*Отступ слева на кнопках*/
+    padding-right: 7px; /*Отступ справа на кнопках*/
+    font-size: 18px; /*Размер самой кнопки*/
+    color: black; /*Цвет текста на кнопках*/ 
+    cursor: pointer; /*Тип курсора при наведении на кнопку[auto|crosshair|default|e-resize|help|move|n-resize|ne-resize|nw-resize|pointer|progress|s-resize|se-resize|sw-resize|text|w-resize|wait|inherit]*/
+}
+.num {
+    width: 30px; /*Длина поля для ввода чисел*/ 
+}
+.str {
+    width: 100px; /*Длинна поля для ввода текста*/
+}
+
+#liquid-round {
+    margin:0px auto; /*Тут лучше ничего не менять, как я понял это описание вызова этой таблице в html файле*/
+    background:#fff url(../template/images/leftside.gif) repeat-y left top; 
+}
+
+.button3 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button3:hover {opacity: 1}
+
+.button2 {
+    background-color: #696969;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2 {border-radius: 50%}
